@@ -26,4 +26,14 @@
 			<quantity unit="pcs">10</quantity>
 		</product>
 	</dairy>
+	<beverages>
+		<product>
+			<name>water</name>
+			<quantity unit="l">0.5</quantity>
+		</product>
+		<product>
+			<name>7up</name>
+			<quantity unit="l">1</quantity>
+		</product>
+	</beverages>
 </ShoppingList>

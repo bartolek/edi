@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Films>
+	<Joker>
+			<genre>Criminal</genre>
+			<rok_powstania>2019</rok_powstania>
+			<personal_rating>8/10</personal_rating>
+			<director>Todd Phillips</director>
+			<actors>Joaquin Phoenix</actors>
+			<actors>Robert De Niro</actors>
+	</Joker>
+	<Parasite>
+			<genre>Drama</genre>
+			<rok_powstania>2019</rok_powstania>
+			<personal_rating>9/10</personal_rating>
+			<director>Joon-ho Bong</director>
+			<actors>Kang-ho Song</actors>
+			<actors>Seon-gyun Lee</actors>
+	</Parasite>
+	<Forrest_Gump>
+			<genre>Drama</genre>
+			<rok_powstania>1994</rok_powstania>
+			<personal_rating>7/10</personal_rating>
+			<director>Robert Zemeckis</director>
+			<actors>Tom Hanks</actors>
+			<actors>Robin Wright</actors>
+	</Forrest_Gump>
+	<El_camino>
+			<genre>Drama</genre>
+			<rok_powstania>2019</rok_powstania>
+			<personal_rating>7.5/10</personal_rating>
+			<director>Vince Gilligan</director>
+			<actors>Aaron Paul</actors>
+			<actors>Charles Baker</actors>
+	</El_camino>
+	<Rambo>
+			<genre>Action</genre>
+			<rok_powstania>2019</rok_powstania>
+			<personal_rating>6/10</personal_rating>
+			<director>Adrian Grunberg</director>
+			<actors>Sylvester Stallone</actors>
+			<actors>Paz Vega</actors>
+	</Rambo>
+</Films>

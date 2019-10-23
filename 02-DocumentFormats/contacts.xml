@@ -22,4 +22,13 @@
 		<phone type="work">6660611</phone>
 		<notes>my best friend</notes>
 	</contact>
+	<contact>
+		<name>Agata</name>
+		<Surname>Leśniowska</Surname>
+		<email type="personal">Alesniowska@gmail.com</email>
+		<email type="business">Agata.Lesniowska@comler.pl</email>
+		<phone type="home">543342567</phone>
+		<phone type="work">522555444</phone>
+		<notes>my 2nd best friend</notes>
+	</contact>
 </contacts>
