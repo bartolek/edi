@@ -8,14 +8,15 @@
 		<h1>Try to guess</h1>
 
 		<script>
-			// read user's number (popup window)
+			var x = Math.floor(Math.random() * 5) + 1
+			var y = parseInt(prompt("Podaj liczbe"))
 			
-			// create a random number
-			
-			// compare the numbers
-			
-			// show results (popup window)
-			
+			if (y == x) {
+				window.alert("Good Work")
+			} 
+			else {
+				window.alert("Sorry")
+			}
 		</script>
 	</body>
 </html>

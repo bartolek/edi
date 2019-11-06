@@ -9,13 +9,13 @@
 		<p>Display data one the console</p>
 
 		<script>
-			// enter your name, surname
-			// ...
-			
-			// display your personal data on the console
-			// ...
-			
-			// 
+			var name = prompt("Podaj imie")
+			var surname = prompt("Podaj naziwsko")
+			var age = parseInt(prompt("PodajWiek"))
+			var x = confirm("Czy chcesz wyświetlic dane w konsoli?")
+			if (x) {
+				console.log(name + surname + age)
+			}
 		</script>
 	</body>
 </html>
