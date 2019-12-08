@@ -7,6 +7,49 @@
 	<body>
 		<h1>Houses for sale</h1>
 		<script>
+			class houses{
+				constructor(number, facilities, price, adress, phone){
+					this.beedrooms = number;
+					this.facilities = facilities;
+					this.price = price;
+					this.adress = adress;
+					this.phone = phone;
+				}
+				changePrice(x) {
+					this.price = x
+				}
+				addFacility(x) {
+					this.facilities.push(x)
+				}
+				description() {
+					console.log("Sypialnie: " + this.beedrooms + 
+					"\nPok: " + this.facilities + "\nCena: " + this.price
+					+ "\nUlica: " + this.adress.street + "\nCity: " + this.adress.city
+					+ "\nNumer telefonu: " + this.phone)
+				}
+			}
+			house1 = new houses(3, ["Garage", "Bedroom", "Swimming Pool"], "300 000PLN", {street: "owl", city: "owly"}, "111 222 333" )
+			house2 = new houses(3, ["garage", "garage"], "120 000 PLN", { city: 'London', street: "Downing" }, "500 800 300")
+			house3 = new houses(3, ["garage", "swimming pool"], "180 000 PLN", { city: 'Bankog', street: "asdasd" }, "30 400 300")
+			house4 = new houses(3, ["garage", "swimming pool", "garage"], "20 000 PLN", { city: 'manchaster', street: "Downing" }, "500 400 300")
+			house5 = new houses(3, ["garage", "swimming pool", "garage"], "300 000 PLN", { city: 'manchaster', street: "Downing" }, "500 400 300")
+			
+			console.log("PRZED")
+			console.log(house1.description())
+			console.log(house2.description())
+			console.log(house3.description())
+			console.log(house4.description())
+			console.log(house5.description())
+
+			house3.addFacility("office")
+			house2.changePrice("20PLN")
+
+			console.log("PO")
+			console.log(house1.description())
+			console.log(house2.description())
+			console.log(house3.description())
+			console.log(house4.description())
+			console.log(house5.description())
 		</script>
 	</body>
 </html>

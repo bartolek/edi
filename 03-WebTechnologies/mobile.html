@@ -6,7 +6,25 @@
 	</head>
 	<body>
 		<h1>Create mobile phone</h1>
+		<button onclick="mob()">Specyfikacje telefonu</button>
 		<script>
+			var mobile = {
+				Name:             "Samsung",
+				RelaseDate:        2018,
+				StillSelled:       true,
+				specs:             {model:"S9", battery: 3800},
+				contacts:          ["Jan Nowak", "Paweł Jankowski", "Paweł Jarek"],
+			}
+			
+			
+			function mob() {
+				window.alert("Marka: " + mobile.Name + "\nRok wydania: " + mobile.RelaseDate
+				+ "\nNadal w sprzedaży: " + mobile.StillSelled + "\nModel: " + mobile.specs.model
+				+ "\nRozmar baterii: " + mobile.specs.battery + "\nKontakty: " + mobile.contacts)
+			}
+
+
+		
 		</script>
 	</body>
 </html>

@@ -10,26 +10,16 @@
 			var myArray = {
 					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
 					min: function(){
-						// maximum value (sort the arr and take the last value, use a built-in function)
+						myArray.arr.sort()
+						console.log(myArray.arr)
 					},		
 					max: function(){},		// look at the min method comment
 					avg: function(){},		// avarage value
 					lth: function(val){}	// the number of arr values less than 'val'
 			};
 			
-			var Array = []
-			var x = "Sorted"
-			for (i=0; i<=4; i++) {
-				Array[i] = Math.floor(Math.random() * 5) + 1
-				console.log(i+1 +":" + "   " + Array[i])
-			}
-			for (i=0; i<=4; i++) {
-				if (Array[i]>Array[i+1]) {
-					var x = "Not Sorted"
-					break
-				}
-			}
-			console.log(x)
+			myArray.min()
+
 		</script>
 	</body>
 </html>

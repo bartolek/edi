@@ -14,18 +14,20 @@
 						weight: null,
 						height: null,
 						enterData: function(){
-							// enter weight and height, and assign them to the object properties
+							BMI.weight = prompt("Podaj swoją wage: ")
+							BMI.height = prompt("Podaj swój wzrost w metrach: ")
 						},
 						calculate: function(){
-							return // create a formula for calculating bmi
+							var x = BMI.weight/(BMI.height*BMI.height)
+							return Math.round(x*100)/100
 						},
 						display: function(){
-							// display the result in a popup window
+							alert("Twoje BMI to: " + BMI.calculate())
 						}
 				}
 			
-				// call BMI methods
-				// ...
+				BMI.enterData()
+				BMI.display()
 			
 			}
 		</script>

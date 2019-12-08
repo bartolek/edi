@@ -8,15 +8,20 @@
 		<h1>An array</h1>
 		<script>
 			var myArray = []
+			var isSorted = "Sorted"
+			for (i=0; i<5; i++) {
+				myArray[i] = Math.floor(Math.random() * 5) +1;
+				console.log(myArray[i])
+			}
 
-			// fill in the array with random values
-			// ...
+			for (i=0; i<5; i++) {
+				if (myArray[i]>myArray[i+1]) {
+					var isSorted = "Not Sorted"
+					break
+				}
+			}
+			console.log(isSorted)
 
-			// check if the array is ordered
-			// ...
-
-			// display the array and information in the console
-			// ...
 
 
 		</script>
