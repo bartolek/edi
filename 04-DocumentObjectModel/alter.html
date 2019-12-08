@@ -5,9 +5,9 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<h1>Another Brick in the Wall</h1>
-		<h3>Pink Floyd</h3>
-		<p>We don't need no education<br>
+		<h1 onclick="part2(this)">Another Brick in the Wall</h1>
+		<h3 ondblclick="color()">Pink Floyd</h3>
+		<p onclick="italics(this)" oncopy="copied()">We don't need no education<br>
 		We don't need no thought control<br>
 		No dark sarcasm in the classroom<br>
 		Teachers leave them kids alone<br>
@@ -20,8 +20,22 @@
 		and psychedelic music.</p>
 		
 		<script>
-			// a JavaScript code here ...
-			
+			function info(element){
+			}
+			function part2(element){
+				element.innerHTML = "Another Brick in the Wall Part 2"
+			}
+			function italics(element){
+				var x = element.innerHTML
+				var result = x.italics()
+				element.innerHTML = result
+			}
+			function color(){
+				document.body.style.backgroundColor = "yellow"
+			}
+			function copied(){
+				alert("Copyright warning!")
+			}
 		</script>
 	</body>
 </html>
