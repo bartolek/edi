@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title id="tomek"> Moje zadanie </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    </head>
+    <body id="body" style="background-color: white;">
+        <header id="main-header" class="jumbotron text-center">
+            <div class="container">
+              <h1 id="header-title">  </h1>
+            </div>
+        </header>
+        <div class="container" >
+            <div id="main" class="card card-body">
+            <p1 id="elo" style="font-weight: bold;"> </p1>
+            <button onclick="display()" class="btn btn-warning "> Nacisnij mnie </button>
+            </div>
+        </div>
+
+
+    <xml id="test" style="display: none;">
+        <dane>
+            <dane_personalne>
+                <Student nr="215688">
+                    <imie> Bartosz </imie>
+                    <Nazwisko> Laskowski </Nazwisko>
+                    <Nr_grupy> B1234 </Nr_grupy>
+                    <płeć> M </płeć>
+                </Student>
+            </dane_personalne>
+            <opis> Plik zawiera schemat koncertów </opis>
+            <przedstawienia>
+                <przedstawienie data="04.01.2013">
+                    <godzina> 18:30, piątek </godzina>
+                    <więcej_informacji>
+                        <autor> Johann Strauss </autor>
+                        <tytuł> Zemsta Nietoperza </tytuł>
+                        <Dyrygent> Tomasz Tokarczyk </Dyrygent>
+                    </więcej_informacji>
+                </przedstawienie>
+                <przedstawienie data="05.01.2013">
+                    <godzina> 18:30, sobota </godzina>
+                    <więcej_informacji>
+                        <autor> Johann Strauss </autor>
+                        <tytuł> Zemsta Nietoperza </tytuł>
+                        <Dyrygent> Tomasz Tokarczyk </Dyrygent>
+                    </więcej_informacji>
+                </przedstawienie>
+                <przedstawienie data="10.01.2013">
+                    <godzina> 11:00, czwartek </godzina>
+                    <więcej_informacji> 
+                        <autor> Wojciech Graniczewski, Jan Hantowicz </autor>
+                        <tytuł> Księga Lasu </tytuł>
+                        <Dyrygent> Marek Kluza </Dyrygent>
+                    </więcej_informacji>
+                </przedstawienie>
+                <przedstawienie data="11.01.2013">
+                    <godzina> 18:30 </godzina>
+                    <więcej_informacji>
+                        <autor> Wolfgang Amadeusz Mozart </autor>
+                        <tytuł> Wesele Zigara </tytuł>
+                        <Dyrygent> Tomasz Tokarczyk </Dyrygent>
+                    </więcej_informacji>
+                </przedstawienie>
+            </przedstawienia>
+        </dane>
+    </xml>
+
+    <script>
+        function display() {
+            var dokument = document.getElementById("test");
+            var dane = dokument.getElementsByTagName("dane")[0];
+            var pers = dane.getElementsByTagName("dane_personalne")[0];
+            var student = pers.getElementsByTagName("student")[0];
+            var imie = student.getElementsByTagName("imie")[0];
+            var nazwisko = student.getElementsByTagName("Nazwisko")[0];
+
+            document.getElementById("elo").innerHTML = "Wykonawca:" + imie.innerHTML + nazwisko.innerHTML
+
+            document.getElementById("header-title").innerHTML = "Moje zadanie"
+
+
+        }
+
+            
+        
+    </script>
+    </body>
+</html>
